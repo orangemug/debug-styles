@@ -1,0 +1,30 @@
+{
+  "version": 8,
+  "name": "Empty Style",
+  "metadata": {
+    "mapbox:autocomposite": false,
+    "mapbox:type": "template",
+    "maputnik:renderer": "mbgljs",
+    "openmaptiles:version": "3.x"
+  },
+  "sources": {
+    "multi": {
+      "type": "geojson",
+      "data": "https://orangemug.github.io/debug-styles/issue-351/multi-point.json"
+    }
+  },
+  "glyphs": "https://demo.tileserver.org/fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "example",
+      "type": "circle",
+      "source": "multi",
+      "paint": {
+        "circle-radius": 5,
+        "circle-color": "rgba(255, 0, 0, 1)"
+      }
+    }
+  ],
+  "sprites": "https://demo.tileserver.org/fonts/{fontstack}/{range}.pbf",
+  "id": "ggn3r9go8"
+}
